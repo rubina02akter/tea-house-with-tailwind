@@ -33,7 +33,7 @@
   <body>
     <main class="max-w-screen-xl mx-auto px-16 lg:px-20">
       <!-- header section -->
-      <header class="flex pt-10 lg:mb-10 mb-10">
+      <header class="flex flex-col lg:flex-row pt-10 lg:mb-10 mb-10">
         <!-- text content -->
         <div>
           <h1 class="text-5xl">
@@ -73,7 +73,7 @@
       <section class="py-8 lg:py-24">
         <!-- title -->
         <div>
-          <h1 class="font-bold text-3xt md:text-4xl text-center">
+          <h1 class="font-bold text-3xt md:text-4xl text-center lg:mt-0 mt-10">
             Our Featured Products
           </h1>
           <p class="text-center text-[#777777] mt-3 max-w-2xl m-auto">
@@ -85,7 +85,7 @@
         </div>
         <!-- grid cards -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center mt-5"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 gap-8 text-center mt-5"
         >
           <!-- card -->
           <div
@@ -131,7 +131,7 @@
       </section>
       <!-- Great Tea section -->
       <section class="mb-24">
-        <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:mt-0 mt-10">
           <!-- img section -->
           <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
             <div
@@ -150,7 +150,7 @@
           </div>
           <!-- text section -->
           <div>
-            <h1 class="text-5xl font-bold mb-5">
+            <h1 class="lg:text-5xl text-3xl font-bold mb-5 lg:mt-0 mt-10">
               Great Tea, Freshly Presented
             </h1>
             <p class="text-[#777777]">
@@ -178,14 +178,14 @@
       <!-- Reviews section -->
       <section class="mb-24">
         <div
-          class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 mb-16"
+          class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white lg:px-7 mb-16"
         >
           <!-- text section -->
           <div
-            class="flext justify-center items-center overflow-hidden mt-44 ml-10"
+            class="flext justify-center items-center overflow-hidden lg:mt-44 mt-10 lg:ml-10 ml-4"
           >
             <div class="w-5/6">
-              <h1 class="text-2xl font-bold mt-10 mb-5">
+              <h1 class="lg:text-2xl text-xl  font-bold lg:mt-10 mt-2 mb-5">
                 Meet Our Super <br />Clients
               </h1>
               <p class="text-[#F4F4F4] text-sm">
@@ -202,9 +202,9 @@
             </div>
           </div>
           <!-- cards section -->
-          <div class="relative py-24">
+          <div class="relative lg:py-24 py-16">
             <!-- Middle card -->
-            <div class="absolute z-10 lg:top-56">
+            <div class="absolute z-10 lg:top-56 lg:w-full w-3/4 lg:ml-0 ml-8 mt-28 lg:mt-0">
               <div
                 class="h-56 bg-white text-black rounded-lg w-full md:w-3/4 flex items-center px-5"
               >
@@ -212,7 +212,7 @@
                   <img src="images/client.png" alt="" />
                 </div>
                 <div>
-                  <p class="text-[#777777] mb-5">
+                  <p class="text-[#777777] lg:mb-5 mb-1 text-sm">
                     We are providing the best and suitable home insurance
                     services for the people who are interested to treatment
                   </p>
@@ -224,13 +224,14 @@
 
             <!-- top card  -->
             <div
-              class="relative left-8 lg:left-32 h-56 bg-white text-black rounded-lg w-full md:w-3/4 flex items-center px-5 opacity-40"
+              class="relative  lg:left-32  h-56 bg-white text-black rounded-lg w-full lg:w-3/4 flex items-center px-5 opacity-40
+               "
             >
-              <div class="absolute -top-5 -left-5">
+              <div class="absolute -top-5 lg:-left-5 -left-1">
                 <img src="images/client.png" alt="" />
               </div>
               <div>
-                <p class="text-[#777777] mb-5">
+                <p class="text-[#777777] lg:mb-5 mb-1 text-sm">
                   We are providing the best and suitable home insurance services
                   for the people who are interested to treatment
                 </p>
@@ -241,13 +242,13 @@
 
             <!-- bottom card  -->
             <div
-              class="relative lg:left-32 left-8 h-56 bg-white text-black rounded-lg w-full md:w-3/4 flex items-center px-5 top-10 opacity-40"
+              class="relative lg:left-32  h-56 bg-white text-black rounded-lg w-full md:w-3/4 flex items-center px-5 top-10 opacity-40"
             >
-              <div class="absolute -top-5 -left-5">
+              <div class="absolute -top-5 lg:-left-5 -left-1">
                 <img src="images/client.png" alt="" />
               </div>
               <div>
-                <p class="text-[#777777] mb-5">
+                <p class="text-[#777777] lg:mb-5 mb-1 text-sm">
                   We are providing the best and suitable home insurance services
                   for the people who are interested to treatment
                 </p>
@@ -263,9 +264,9 @@
     <footer class=" bg-red-50 text-[#F4F4F4] px-4 py-10 lg:px-16">
       <div class="w-9/12 mx-auto text-black">
         <!-- logo -->
-        <div class="mb-8 flex justify-between">
-          <img class="mb-8" src="images/cup.png" alt="" />
-          <div class="flex items-center gap-2">
+        <div class="mb-8 flex  lg:flex-row flex-col justify-between items-start">
+          <img class="mb-8 w-12 lg:w-16" src="images/cup.png" alt="" />
+          <div class="flex flex-col lg:flex-row items-start lg:items-center gap-2 ">
             <h4>Ready to get started?</h4>
             <button
               class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-3 py-2 rounded-md text-white mt-2 font-bold mb-5 lg:mb-3"
